@@ -1,0 +1,9 @@
+<launch>
+
+    <node name="GetTimestamp" pkg="odomeva" type="GetTimestamp" output="screen">
+        <!-- 0 for A-LOAM, 1 for LeGO-LOAM -->
+        <param name="DifferentTransformMatrix" type="int" value="1" />
+        <param name="SavePath" type="string" value="lego07.txt"/>
+        <param name="OdomTopic" type="string" value="/aft_mapped_to_init"/>
+    </node>
+</launch>
